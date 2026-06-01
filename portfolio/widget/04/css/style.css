@@ -1,0 +1,93 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+.sns-icons {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.fa {
+  display: inline-block;
+  font-size: 2em;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.fa:hover {
+  transform: rotateY(360deg);
+  border: none;
+  color: #fff;
+}
+.fa:nth-child(1):hover {
+  background-color: #1877f2;
+}
+.fa:nth-child(2):hover {
+  background-color: #ea4335;
+}
+.fa:nth-child(3):hover {
+  background-color: #1da1f2;
+}
+.fa:nth-child(4):hover {
+  background: linear-gradient(
+    45deg,
+    #fd1d1d,
+    #f77737,
+    #fcaf45,
+    #e1306c,
+    #c13584,
+    #833ab4,
+    #5851db,
+    #405de6
+  );
+}
+.fa:nth-child(5):hover {
+  background-color: #181717;
+}

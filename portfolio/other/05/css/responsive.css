@@ -1,0 +1,340 @@
+@media (max-width: 768px) {
+  /* Common CSS */
+  section.common {
+    padding: 48px 0;
+  }
+  section.common .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .content-container h2 {
+    font-size: 25px;
+  }
+  .content-container p {
+    font-size: 14px;
+  }
+  /* ##### Header CSS ##### */
+  .header-top .inner,
+  .header-bottom .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* Header Top */
+  .header-top {
+    position: relative;
+  }
+  .header-nav.pc,
+  .header-download-btn.pc {
+    display: none;
+  }
+  .mobile-nav-open {
+    display: block;
+    width: 20px;
+    height: 14px;
+    position: relative;
+  }
+  .mobile-nav-open span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .mobile-nav-open span:nth-child(1) {
+    top: 0;
+  }
+  .mobile-nav-open span:nth-child(2) {
+    top: 50%;
+  }
+  .mobile-nav-open span:nth-child(3) {
+    top: 100%;
+  }
+  .mobile-nav-open.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .mobile-nav-open.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-nav-open.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+  }
+  .header-download-btn.mobile {
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+  .header-nav.mobile {
+  }
+  .header-nav.mobile a {
+    color: #000;
+    display: block;
+    margin-right: 0;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .header-nav.mobile a:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* Header Bottom */
+  .header-bottom {
+    position: relative;
+  }
+  .header-links {
+    display: none;
+  }
+  .mobile-header-links-open {
+    display: block;
+  }
+  .mobile-header-links-open i {
+    font-size: 25px;
+    transition: 0.5s;
+  }
+  .mobile-header-links-open.active i {
+    transform: rotate(180deg);
+  }
+  .mobile-header-links {
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9fa;
+    top: 100%;
+    left: 0;
+    padding: 8px 20px;
+  }
+  .mobile-header-links a {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .mobile-header-links a:first-child {
+    font-weight: 600;
+  }
+  /* ##### Main ##### */
+  main {
+    padding: 0 20px;
+  }
+  /* Section : Hero */
+  .hero .inner {
+    width: 100%;
+  }
+  .hero-content-container {
+    height: auto;
+    /* padding-bottom: 50px; */
+  }
+  .hero-image-container {
+    display: none;
+  }
+  .heading h2 {
+    font-size: 30px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .hero-content-container {
+    text-align: center;
+  }
+  /* Section : Banner-Message */
+  .banner-message h2 {
+    width: 100%;
+    padding: 0;
+    font-size: 30px;
+  }
+  .banner-message h2:after {
+    width: 80%;
+    left: 30px;
+    top: 100%;
+  }
+  /* Section : Compatibility */
+  .compatibility .content-container {
+    order: 2;
+  }
+  /* Section : Application */
+  .app-link img {
+    width: 120px;
+  }
+  /* Section : Function */
+  .function .inner {
+    width: 100%;
+  }
+  .function h2 {
+    font-size: 28px;
+  }
+  .function h2:after {
+    width: 220px;
+    left: 65%;
+  }
+  .function-list h3 {
+    font-size: 22px;
+  }
+  .function-list .row ul {
+    flex-direction: column;
+  }
+  .function-list .row ul li {
+  }
+  .function-list .row ul li span,
+  .function-list .row ul li a {
+  }
+  /* Section : Custom-Browser */
+  .custom-browser .inner {
+    width: 100%;
+  }
+  .custom-browser h2 {
+    font-size: 30px;
+  }
+  .custom-browser h2:after {
+    width: 100px;
+  }
+  .custom-browser img {
+    width: 100%;
+  }
+  .how-custom {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* Section : Firefox-Goals */
+  .firefox-goals .inner {
+    width: 100%;
+  }
+  .firefox-goals h2 {
+    font-size: 30px;
+  }
+  .firefox-goals h2:after {
+    width: 140px;
+    left: 30%;
+  }
+  .goals {
+    flex-direction: column;
+  }
+  .goals div h3 {
+    text-align: center;
+  }
+  .goals div p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .goals div img {
+    width: 100%;
+  }
+  /* Section : New-Function */
+  .new-function .inner {
+    width: 100%;
+  }
+  .new-function h2 {
+    font-size: 28px;
+  }
+  .new-function h2:after {
+    left: 85%;
+    width: 90px;
+    bottom: 30px;
+  }
+  .new-function .row ul {
+    flex-direction: column;
+  }
+  .new-function .row ul li {
+    text-align: center;
+  }
+  .new-function p {
+    margin: auto;
+  }
+  /* Footer */
+  footer {
+    /* padding: 0 20px; */
+  }
+  .manual p {
+    font-size: 16px;
+  }
+  /* Footer Common */
+  .footer-top .inner,
+  .footer-bottom .inner {
+    width: 100%;
+  }
+  /* Footer Top */
+  .footer-top {
+    padding: 60px 0 0 0;
+  }
+  .footer-top .inner {
+    padding-bottom: 20px;
+  }
+  .footer-logo img {
+    margin-left: 30px;
+  }
+  .footer-links ul {
+    flex-direction: column;
+  }
+  .footer-links ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .link-item-title {
+    position: relative;
+    pointer-events: visible;
+  }
+  .link-item-title:after {
+    content: "\e9c5";
+    font-family: xeicon;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    /* transition: 0.5s; */
+  }
+  .link-item-title.active:after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .link-item {
+    display: none;
+  }
+  .link-item.active {
+    display: flex;
+  }
+  .link-item a {
+    align-self: center;
+  }
+  .mozilla-sns {
+    margin-bottom: 30px;
+  }
+  /* Footer Bottom */
+  .footer-bottom {
+    padding: 30px 0 60px 0;
+  }
+  .footer-bottom .inner {
+    flex-direction: column;
+  }
+  .site-info > a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .site-info p {
+    margin: 10px auto;
+    text-align: center;
+    max-width: 80%;
+  }
+  .language {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

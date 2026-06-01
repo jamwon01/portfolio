@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+  /* hHeader Announcement */
+  .announcement-text {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .announcement-text:before {
+    left: 60px;
+  }
+  /* Header Main */
+  .header-main .inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .logo-img {
+    align-self: center;
+  }
+  .logo-img img {
+    width: 120px;
+  }
+  .setting-box {
+    display: none;
+  }
+  .user-action {
+  }
+  .user-action span,
+  .user-action a {
+    font-size: 12px;
+    width: 70px;
+  }
+  .user-action span:before,
+  .user-action a:nth-of-type(1):before,
+  .user-action a:nth-of-type(2):before {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+  }
+  .header-nav-container .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header-nav ul {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .dropdown .inner {
+    width: 100%;
+  }
+  .dropdown ul {
+    width: 100%;
+  }
+
+  /* Section1 */
+  section.main-section {
+    height: 100vh;
+    background-size: cover;
+  }
+  .main-section .inner {
+    width: 100%;
+  }
+  .main-section h2 {
+    font-size: 20px;
+  }
+  /* Section2 */
+  .news-container {
+    width: 100%;
+  }
+  .promo-slide {
+    width: 100%;
+    height: auto;
+  }
+  .support .inner {
+    width: 100%;
+  }
+  .nhis-intro .inner {
+    width: 100%;
+  }
+  footer .inner {
+    width: 100%;
+  }
+}

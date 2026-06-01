@@ -1,0 +1,110 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.desc-text {
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+.comics-gallery {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.comics-gallery h2 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.comics-list {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.comics-list img {
+  width: 200px;
+  height: 290px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.comics-list img:hover {
+  transform: translateY(-10px);
+}
+/* LightBox CSS */
+.lightbox-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-content {
+  color: #fff;
+  text-align: center;
+}
+.lightbox-content span {
+  display: block;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.lightbox-content p {
+  font-weight: 600;
+}
+

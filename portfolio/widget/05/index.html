@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Signup Form</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- XEICON -->
+    <link rel="stylesheet" href="./assets/xeicon/css/xeicon.min.css" />
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- script.js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <button class="signup-open">Signup Modal Open</button>
+      <!-- Signup Form -->
+      <form class="signup-form">
+        <i class="xi xi-close signup-close"></i>
+        <h2>Welcome!</h2>
+        <div class="field name-field">
+          <i class="xi xi-user input-icon"></i>
+          <input class="userName" type="text" placeholder="Enter Your Name" />
+        </div>
+        <div class="field email-field">
+          <i class="xi xi-mail input-icon"></i>
+          <input class="userEmail" type="text" placeholder="Enter Your Email" />
+        </div>
+        <div class="field -field">
+          <i class="xi xi-lock input-icon"></i>
+          <input
+            class="userPw"
+            type="password"
+            placeholder="Enter Your Password"
+          />
+          <i class="xi xi-eye pw-open"></i>
+        </div>
+        <div class="signup-check">
+          <div class="check check-1">
+            <label>
+              <input type="checkbox" id="ad-check" /><span
+                >광고성 문자/이메일 수신 동의</span
+              >
+            </label>
+          </div>
+          <div class="check check-2">
+            <label>
+              <input type="checkbox" id="age-check" /><span
+                >저는 만 14세 이상입니다.</span
+              >
+            </label>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="signup-btn">Get Started</button>
+        </div>
+        <p class="signin-text">
+          이미 아이디가 있으신가요?
+          <a class="signin-link" href="#">로그인하기</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

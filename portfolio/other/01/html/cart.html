@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <base href="/portfolio/other/01/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오뚜기몰 | 오뚜기몰엔 다 있다!</title>
+    <link rel="icon" href="./images/otoki_favi.png" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Plugin : The Final Countdown -->
+    <script src="./plugin/jquery.countdown.min.js"></script>
+    <!-- Swiper.js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive-mobile.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header Include -->
+      <div class="header-include"></div>
+      <!-- Main -->
+      <main>
+        <!-- Section : Cart Section -->
+        <section class="cart-section">
+          <div class="inner">
+            <h2 class="cart-heading">장바구니</h2>
+            <div class="cart-container">
+              <div class="cart-information">
+                <div class="cart-tab-bar">
+                  <a href="#" class="active">일반배송 <span>4</span></a>
+                  <a href="#">선물하기 🎁 <span>0</span></a>
+                  <a href="#">마일리지 <span>0</span></a>
+                </div>
+                <div class="cart-actions-wrap">
+                  <label>
+                    <input type="checkbox" class="cart-all-chk" />
+                    <em>전체선택</em>
+                  </label>
+                  <div class="delete-btns">
+                    <button>품절삭제</button>
+                    <button>선택삭제</button>
+                  </div>
+                </div>
+                <div class="cart-products-container">
+                  <div class="cart-products-wrap">
+                    <div class="product-storage ambient">
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="storage-all-chk cart-chk"
+                        />
+                        <i class="bi bi-brightness-low-fill"></i>
+                        <em>실온</em>
+                      </label>
+                      <div class="free-delivery-progress">
+                        <span
+                          class="deilvery-progress-bar"
+                          style="width: 30%"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="cart-products">
+                      <div class="cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img01.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pr-desc">
+                          <h3 class="pr-title">뿌셔뿌셔 마요땅 100G</h3>
+                        </div>
+                        <div class="pr-quantity">
+                          <button class="minus">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+                          <span class="quantity">1</span>
+                          <button class="plus">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <span class="pr-price">880원</span>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img02.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pr-desc">
+                          <h3 class="pr-title">열라면 (120GX5)</h3>
+                        </div>
+                        <div class="pr-quantity">
+                          <button class="minus">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+                          <span class="quantity">1</span>
+                          <button class="plus">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <span class="pr-price">3,580원</span>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="mo-cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img01.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="mo-cart-group">
+                          <div class="pr-desc">
+                            <h3 class="pr-title">뿌셔뿌셔 마요땅 100G</h3>
+                          </div>
+                          <div class="pr-quantity">
+                            <button class="minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <span class="pr-price">880원</span>
+                        </div>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="mo-cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img02.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="mo-cart-group">
+                          <div class="pr-desc">
+                            <h3 class="pr-title">열라면 (120GX5)</h3>
+                          </div>
+                          <div class="pr-quantity">
+                            <button class="minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <span class="pr-price">3,580원</span>
+                        </div>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                    </div>
+                    <div class="cart-summary">
+                      <p>주문금액 <span class="summary-price">7,740</span>원</p>
+                      <a href="#">실온 상품 더 담고 무료배송 받기</a>
+                    </div>
+                  </div>
+                  <div class="cart-products-wrap">
+                    <div class="product-storage cold">
+                      <label>
+                        <input
+                          type="checkbox"
+                          class="storage-all-chk cart-chk"
+                        />
+                        <i class="bi bi-snow2"></i>
+                        <em>냉장ㆍ냉동</em>
+                      </label>
+                      <div class="free-delivery-progress">
+                        <span
+                          class="deilvery-progress-bar"
+                          style="width: 100%"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="cart-products">
+                      <div class="cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img03.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pr-desc">
+                          <h3 class="pr-title">통실통실 멘보샤 756G</h3>
+                        </div>
+                        <div class="pr-quantity">
+                          <button class="minus">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+                          <span class="quantity">1</span>
+                          <button class="plus">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <span class="pr-price">19,980원</span>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img04.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pr-desc">
+                          <h3 class="pr-title">맥앤치즈볼 300G</h3>
+                        </div>
+                        <div class="pr-quantity">
+                          <button class="minus">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+                          <span class="quantity">1</span>
+                          <button class="plus">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <span class="pr-price">7,980원</span>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pr-desc">
+                          <h3 class="pr-title">통실통실 소시지롤 660G</h3>
+                        </div>
+                        <div class="pr-quantity">
+                          <button class="minus">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+                          <span class="quantity">1</span>
+                          <button class="plus">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <span class="pr-price">19,980원</span>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="mo-cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img03.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="mo-cart-group">
+                          <div class="pr-desc">
+                            <h3 class="pr-title">통실통실 멘보샤 756G</h3>
+                          </div>
+                          <div class="pr-quantity">
+                            <button class="minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <span class="pr-price">19,980원</span>
+                        </div>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="mo-cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img04.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="mo-cart-group">
+                          <div class="pr-desc">
+                            <h3 class="pr-title">맥앤치즈볼 300G</h3>
+                          </div>
+                          <div class="pr-quantity">
+                            <button class="minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <span class="pr-price">7,980원</span>
+                        </div>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                      <div class="mo-cart-product">
+                        <input type="checkbox" class="cart-chk" />
+                        <div class="pr-thumb">
+                          <img
+                            src="./images/section/cart/cart_pr_img05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="mo-cart-group">
+                          <div class="pr-desc">
+                            <h3 class="pr-title">통실통실 소시지롤 660G</h3>
+                          </div>
+                          <div class="pr-quantity">
+                            <button class="minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantity">1</span>
+                            <button class="plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <span class="pr-price">19,980원</span>
+                        </div>
+                        <i class="bi bi-x-lg cart-pr-delete"></i>
+                      </div>
+                    </div>
+                    <div class="cart-summary">
+                      <p>주문금액 <span class="summary-price">7,740</span>원</p>
+                      <a href="#">실온 상품 더 담고 무료배송 받기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-checkout">
+                <h3>상품금액</h3>
+                <div class="cart-price-detail">
+                  <div>
+                    <span>총 상품금액</span>
+                    <b> <span class="cart-total-price">61,260</span>원</b>
+                  </div>
+                  <div class="cart-dc-box">
+                    <span>총 할인금액</span>
+                    <b> <span class="cart-discount">-0</span>원</b>
+                  </div>
+                  <div>
+                    <span>총 배송비</span>
+                    <b> <span class="delivery-fee">3,000</span>원</b>
+                  </div>
+                </div>
+                <div class="cart-final">
+                  <span>결제예상금액</span>
+                  <b><span class="cart-final-price">64,260</span>원</b>
+                </div>
+                <div class="payment-notice">
+                  <p>
+                    무료배송 혜택 상품 및 배송 유형별 30,000원 이상 구매 시
+                    무료배송입니다.
+                  </p>
+                  <p>
+                    배송 유형 간 교차 합계 금액은 무료배송에 적용되지 않습니다.
+                    (실온 배송+저온 배송 합계 30,000원 무료배송불가)
+                  </p>
+                </div>
+                <div class="payment-btn-box">
+                  <a href="#" class="add-to-gift"><span>선물하기 담기</span></a>
+                  <a href="#" class="pay-btn"
+                    ><span class="cart-final-price">64,260</span>원 주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Include -->
+      <div class="footer-include"></div>
+      <!-- Floating Menu Include -->
+      <div class="floating-menu-include"></div>
+      <!-- Mobile Bottom Navigation Include -->
+      <div class="mo-bottom-nav-include"></div>
+      <!-- Product Delete Modal -->
+      <div class="product-delete-modal">
+        <div class="product-delete">
+          <div class="delete-confirm">
+            <p>선택하신 상품을 장바구니에서 삭제하시겠습니까?</p>
+          </div>
+          <div class="confirm-btns">
+            <button class="btn-cancel">취소</button>
+            <button class="btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

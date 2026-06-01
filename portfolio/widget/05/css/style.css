@@ -1,0 +1,148 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #222;
+  background-color: #1c1c28;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.signup-open {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 3px;
+  background-color: #26282f;
+  color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+.signup-form {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #26282f;
+  color: #e0e0e0;
+  padding: 30px;
+  display: none;
+}
+.signup-form h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.signup-form .xi-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.field {
+  position: relative;
+  margin-bottom: 15px;
+}
+.field input {
+  width: 100%;
+  padding: 15px 0 15px 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background-color: #c7c7c7;
+  color: #333;
+}
+.field input::placeholder {
+  color: #333;
+}
+.field input:focus {
+  outline: 1px solid #00bcd4;
+}
+.input-icon,
+.pw-open {
+  position: absolute;
+  color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.input-icon {
+  left: 15px;
+}
+.pw-open {
+  right: 20px;
+  cursor: pointer;
+}
+.signup-check {
+  margin-bottom: 20px;
+}
+.check {
+  accent-color: #4caf50;
+}
+.check:first-child {
+  margin-bottom: 5px;
+}
+.check span {
+  display: inline-block;
+  margin-left: 3px;
+}
+.signup-btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+.signin-text {
+  font-size: 14px;
+  margin-top: 14px;
+  text-align: center;
+}
+.signin-link {
+  color: #c7c7c7;
+  margin-top: 10px;
+}

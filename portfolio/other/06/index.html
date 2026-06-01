@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altools | 내 PC 필수품</title>
+    <link rel="icon" href="./images/favi.png" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- XEICON -->
+    <link rel="stylesheet" href="./assets/xeicon/css/xeicon.min.css" />
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- Slick.js -->
+    <link rel="stylesheet" href="./script/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./script/slick/slick.css" />
+    <script src="./script/slick/slick.js" defer></script>
+    <!-- Custom js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- ########## Header ########## -->
+      <header>
+        <div class="inner">
+          <div class="logo">
+            <img
+              src="./images/header/header_logo.svg"
+              alt="알툴즈 로고 이미지"
+            />
+          </div>
+          <nav class="header-nav">
+            <div class="download-menu">
+              <div class="dw-link dw-tool">
+                <h3>Tool</h3>
+                <div class="dw-list">
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon01.png"
+                      alt="알집 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알집</h4>
+                      <p>전국민 압축프로그램</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon02.png"
+                      alt="알캡처 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알캡처</h4>
+                      <p>쉽고 빠른 화면 캡처</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon03.png"
+                      alt="알드라이브 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알드라이브</h4>
+                      <p>편리한 파일 전송 클라이언트</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dw-link dw-contents">
+                <h3>Contents</h3>
+                <div class="dw-list">
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon05.png"
+                      alt="알씨 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알씨</h4>
+                      <p>이미지 뷰어/사진 편집 프로그램</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon06.png"
+                      alt="알PDF 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알PDF</h4>
+                      <p>PDF 뷰어/리더,PDF 변환/편집</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon07.png"
+                      alt="알송 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알송</h4>
+                      <p>온라인 음악가사 플레이어</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon08.png"
+                      alt="앨런 Beta 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>앨런 Beta</h4>
+                      <p>일잘러를 위한 AI 파트너</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dw-link dw-mobile">
+                <h3>Mobile</h3>
+                <div class="dw-list">
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon09.png"
+                      alt="알집 모바일 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알집 모바일</h4>
+                      <p>압축 지원 파일 탐색 관리자</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon10.png"
+                      alt="알송 모바일 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알송 모바일</h4>
+                      <p>음악과 가사를 동시에</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon11.png"
+                      alt="알약M 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알약M</h4>
+                      <p>스마트폰의 모든 처방</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon12.png"
+                      alt="앨런 Beta 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>피크닉</h4>
+                      <p>맑은 하늘 필터 카메라</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dw-link dw-security">
+                <h3>Security</h3>
+                <div class="dw-list">
+                  <a href="#">
+                    <img
+                      class="dw-icon"
+                      src="./images/header/download_menu/dw_icon04.png"
+                      alt="알약 아이콘"
+                    />
+                    <div class="dw-desc">
+                      <h4>알약</h4>
+                      <p>전국민 백신 프로그램</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <a class="tools-pack-link" href="#">
+                <img
+                  src="./images/header/download_menu/tools_pack_bg.png"
+                  alt=""
+                />
+                <span>알툴즈 모든 제품을 한 번에.</span>
+                <span>알툴즈 통합 팩</span>
+              </a>
+            </div>
+            <ul>
+              <li><a class="nav-drop nav-dw" href="#">알툴즈 다운로드</a></li>
+              <li><a href="#">알툴즈 AD-ZERO</a></li>
+              <li><a href="#">비즈니스 구매</a></li>
+              <li class="nav-cs">
+                <a class="nav-drop" href="#">고객센터</a>
+                <div class="cs-drop">
+                  <a href="#">자주하는 질문</a>
+                  <a href="#">1:1 문의하기</a>
+                  <a href="#">공지사항</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="ad-and-login">
+            <div class="header-ad">
+              <a href="#">
+                <img
+                  src="./images/header/header_ad_img.png"
+                  alt="에이쁠포인트 앱 출시 광고 이미지"
+                />
+              </a>
+            </div>
+            <div class="login">
+              <a class="login-link" href="#">로그인</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ########## Main ########## -->
+      <main>
+        <section class="main-slide-section">
+          <div class="inner">
+            <ul class="main-slide">
+              <li class="m-slide m-slide01">
+                <h2>다양한 캡처는 기본, <br />간편한 편집까지</h2>
+                <p>
+                  크롭, 모자이크, AI 배경 제거 등 신규 편집 기능이 추가된<br />알캡처
+                  3.0을 지금 바로 사용해 보세요.
+                </p>
+                <a class="read-more" href="#">알캡처 자세히보기</a>
+              </li>
+              <li class="m-slide m-slide02">
+                <h2>자유로운 편집과<br />문서 포맷 변환</h2>
+                <p>
+                  제한이 많던 PDF 문서,<br />
+                  원하는 문서 형식 변환과 편집을 손쉽게!
+                </p>
+                <a class="read-more" href="#">알PDF 자세히보기</a>
+              </li>
+              <li class="m-slide m-slide03">
+                <h2>알씨의 새로운 기능!<br />AI 배경 제거</h2>
+                <p>
+                  AI로 사진의 불필요한 배경을 제거하고<br />원하는 영역만 골라서
+                  저장해요.
+                </p>
+                <a class="read-more" href="#">알씨 자세히보기</a>
+              </li>
+              <li class="m-slide m-slide04">
+                <h2>
+                  알툴즈를 더 쉽게.<br />
+                  내 PC 전용 매니저
+                </h2>
+                <p>
+                  다양한 알툴즈의 최신 꿀기능을 놓치지 않도록<br />알매니저가
+                  알아서 관리할게요.
+                </p>
+                <a class="read-more" href="#">알매니저 자세히보기</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="products-list-section">
+          <div class="inner">
+            <ul class="pr-list">
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img1.png"
+                    alt="알툴즈 통합팩 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알툴즈 통합팩</span>
+                    <span class="pr-desc">내 PC사용을 간편하고 편리하게</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img2.png"
+                    alt="알집 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알집</span>
+                    <span class="pr-desc">전국민 압축 프로그램</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img3.png"
+                    alt="알약 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알약</span>
+                    <span class="pr-desc">전국민 백신 프로그램</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img4.png"
+                    alt="알씨 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알씨</span>
+                    <span class="pr-desc">이미지 뷰어, 사진 편집</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img5.png"
+                    alt="알캡처 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알캡처</span>
+                    <span class="pr-desc">쉽고 빠른 화면 캡처</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img6.png"
+                    alt="알PDF 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알PDF</span>
+                    <span class="pr-desc">PDF 뷰어/리더, PDF 변환/편집</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img7.png"
+                    alt="알송 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알송</span>
+                    <span class="pr-desc">온라인 음악가사 플레이어</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/products_list_section/product_img8.png"
+                    alt="알드라이브 이미지"
+                  />
+                  <div class="pr-info">
+                    <span class="pr-name">알드라이브</span>
+                    <span class="pr-desc">쉽고 편리한 파일 전송</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="premium-service-section">
+          <div class="inner">
+            <div>
+              <h2>
+                광고 없이 쾌적하게<br />알툴즈의 구독서비스를 확인해보세요.
+              </h2>
+              <a class="premium-link" href="#">알툴즈 AD-ZERO</a>
+            </div>
+          </div>
+        </section>
+        <section class="business-product-section">
+          <div class="inner">
+            <div>
+              <h2>
+                알툴즈 기업용, 알약 기업용 제품의<br />라이선스를 확인하세요.
+              </h2>
+              <a class="business-pr-link" href="#">비즈니스 구매 자세히보기</a>
+            </div>
+          </div>
+        </section>
+        <section class="best-product-section">
+          <div class="best-pr-inner">
+            <h2>빠르고 간편한 전국민 PC 필수품, 알툴즈</h2>
+            <div class="best-pr">
+              <ul class="best-pr-row best-pr-row1">
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg1.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img1.png"
+                          alt="알툴즈 통합팩 이미지"
+                        />
+                        <h3>알툴즈 통합팩</h3>
+                      </div>
+                      <p>
+                        내 PC 사용을 좀 더 간편하고 편리하게! 알툴즈 통합팩
+                        한번의 설치로 내 PC에 필요한 모든 것이 준비됩니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg2.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img2.png"
+                          alt="알집 이미지"
+                        />
+                        <h3>알집</h3>
+                      </div>
+                      <p>
+                        다양한 압축파일 포맷 지원으로 파일 압축하기와 압축풀기에
+                        뛰어난 무료 압축프로그램 입니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg3.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img3.png"
+                          alt="알약 이미지"
+                        />
+                        <h3>알약</h3>
+                      </div>
+                      <p>
+                        전국민 백신 프로그램 알약! 똑똑한 백신 프로그램 알약으로
+                        바이러스, 악성코드를 검사하고 제거해보세요.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg4.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img4.png"
+                          alt="알씨 이미지"
+                        />
+                        <h3>알씨</h3>
+                      </div>
+                      <p>
+                        알씨는 사진 편집부터 동영상 만들기, 사진 포먓 변환,
+                        자동회전, 일괄편집, 사진 꾸미기 등 편리한 기능을
+                        제공하는 이미지 뷰어 프로그램입니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="best-pr-row best-pr-row2">
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg5.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img5.png"
+                          alt="알캡처 이미지"
+                        />
+                        <h3>알캡처</h3>
+                      </div>
+                      <p>
+                        모니터 화면 안의 무엇이든 원하는 순간에 보이는 그대로
+                        캡처해주는 화면 캡쳐 프로그램입니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg6.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img6.png"
+                          alt="알PDF 이미지"
+                        />
+                        <h3>알PDF</h3>
+                      </div>
+                      <p>
+                        알PDF 뷰어는 PDF를 다양한 포맷으로 변환 할 수 있고, PDF
+                        합치기, PDF 용량 줄이기, 수정 등 PDF를 자유롭게 편집할
+                        수 있는 PDF 변환/편집 프로그램입니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg7.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img7.png"
+                          alt="알송 이미지"
+                        />
+                        <h3>알송</h3>
+                      </div>
+                      <p>
+                        음악과 가사를 동시에 즐길 수 있는 알송은 실시간
+                        싱크가사, 어학기능을 제공하는 음악 플레이어입니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="best-pr-bg"
+                      src="./images/best_product_section/best_pr_bg8.png"
+                      alt=""
+                    />
+                    <div class="best-pr-desc">
+                      <div>
+                        <img
+                          class="best-pr-icon"
+                          src="./images/products_list_section/product_img8.png"
+                          alt="알드라이브 이미지"
+                        />
+                        <h3>알드라이브</h3>
+                      </div>
+                      <p>
+                        클라이언트와 서버 간의 파일 송수신 기능 외에, WebDAV 등
+                        다양한 프로토콜 파일 전송을 지원합니다.
+                      </p>
+                      <span>자세히보기</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="banner-section">
+          <div class="inner">
+            <ul class="banner-slide">
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/banner_section/banner_slide_img1.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/banner_section/banner_slide_img2.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="user-tips-section">
+          <div class="inner">
+            <h2>더욱 다양하고 쾌적하게 활용하는 꿀팁</h2>
+            <div class="tips">
+              <a class="tip-2col" href="#">
+                <div class="tip-box tip-box1">
+                  <img
+                    src="./images/user_tips_section/user_tips_bg1.png"
+                    alt=""
+                  />
+                  <div class="tip-text">
+                    <h3 class="first-h3">광고 없이,<br />제휴 설치 없이.</h3>
+                    <p>
+                      쾌적한 PC환경을 제공하는<br />
+                      광고 없는 알툴즈 AD-ZERO
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tip-box tip-box2">
+                  <img
+                    src="./images/user_tips_section/user_tips_bg2.png"
+                    alt=""
+                  />
+                  <div class="tip-text">
+                    <h3>알PDF, 인쇄도 더 다양하게</h3>
+                    <p>알PDF로 문서 인쇄하는 방법</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tip-box tip-box3">
+                  <img
+                    src="./images/user_tips_section/user_tips_bg3.png"
+                    alt=""
+                  />
+                  <div class="tip-text">
+                    <h3>알캡처, 이미지 배경을 투명하게</h3>
+                    <p>
+                      캡처한 이미지에서 원하는 영역만<br />
+                      골라서 저장할 수 있어요.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tip-box tip-box4">
+                  <img
+                    src="./images/user_tips_section/user_tips_bg4.png"
+                    alt=""
+                  />
+                  <div class="tip-text">
+                    <h3>알집, 압축파일 이름이 깨질 때</h3>
+                    <p>
+                      알집 모바일 유니코드 설정으로<br />깨짐없이 압축 해제하는
+                      방법
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tip-box tip-box5">
+                  <img
+                    src="./images/user_tips_section/user_tips_bg5.png"
+                    alt=""
+                  />
+                  <div class="tip-text">
+                    <h3>알씨, 급할 때는 집에서!</h3>
+                    <p>알씨를 활용하여<br />셀프로 증명사진 만들기</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="more-links-section">
+          <div class="more-links">
+            <a href="#">
+              <img
+                src="./images/more_links_section/more_links_icon1.png"
+                alt=""
+              />
+              <div>
+                <span>더 많은 알툴즈 꿀팁은</span>
+                <p>알툴즈 블로그 바로가기</p>
+              </div>
+            </a>
+            <a href="#">
+              <img
+                src="./images/more_links_section/more_links_icon2.png"
+                alt=""
+              />
+              <div>
+                <span>가장 빠른 인공지능 소식은</span>
+                <p>이스트소프트 바로가기</p>
+              </div>
+            </a>
+            <a href="#">
+              <img
+                src="./images/more_links_section/more_links_icon3.png"
+                alt=""
+              />
+              <div>
+                <span>최신 보안 소식은</span>
+                <p>이스트시큐리티 바로가기</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+      <!-- ########## Footer ########## -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-inner">
+            <ul class="footer-top-links">
+              <li class="f-links-download">
+                <a class="f-links-title" href="#">알툴즈 다운로드</a>
+                <div>
+                  <div class="f-links-col">
+                    <a href="#">알집</a>
+                    <a href="#">알씨</a>
+                    <a href="#">알캡처</a>
+                    <a href="#">알PDF</a>
+                    <a href="#">알툴즈 모바일</a>
+                  </div>
+                  <div class="f-links-col">
+                    <a href="#">알드라이브</a>
+                    <a href="#">알송</a>
+                    <a href="#">알약</a>
+                    <a href="#">앨런 Beta</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="f-links-title" href="#">알툴즈 AD-ZERO</a>
+              </li>
+              <li>
+                <a class="f-links-title" href="#">비즈니스 구매</a>
+              </li>
+              <li>
+                <a class="f-links-title" href="#">고객센터</a>
+                <a href="#">자주하는 질문</a>
+                <a href="#">1:1 문의하기</a>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a class="f-links-title" href="#">마이페이지</a>
+                <a href="#">구독 관리</a>
+                <a href="#">포인트 내역</a>
+                <a href="#">1:1 문의 내역</a>
+                <a href="#">보유 혜택 내역</a>
+                <a href="#">계정 설정</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-inner">
+            <div class="footer-bot-t">
+              <div class="footer-bot-links">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">소프트웨어 사용권 계약서</a>
+                <a href="#">제휴문의</a>
+                <a href="#">이벤트</a>
+              </div>
+              <div class="family-site">
+                <button class="fam-site-open">family site</button>
+                <div class="fam-list">
+                  <a href="#">이스트소프트</a>
+                  <a href="#">이스트시큐리티</a>
+                  <a href="#">이스트게임즈</a>
+                  <a href="#">이스트에이드</a>
+                  <a href="#">ROUNZ</a>
+                  <a href="#">Exponential</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bot-b">
+              <div class="company-link">
+                <a class="company-logo" href="#"></a>
+              </div>
+              <div class="company-info">
+                <p>
+                  (주)이스트소프트 서울시 서초구 반포대로 3 이스트빌딩 (우)06711
+                </p>
+                <span>대표이사 : 정상원</span>
+                <span>사업자등록번호 : 229-81-03214</span>
+                <span>통신판매업신고번호 : 2011-서울서초-1962</span>
+                <span>TEL. 1544-8209 </span>
+                <span>FAX. 02-882-1155</span>
+                <span
+                  >E-mail.
+                  <a href="mailto:hyo4754@gmail.com"
+                    >altools@estsoft.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

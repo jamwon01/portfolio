@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <base href="/portfolio/other/01/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오뚜기몰 | 오뚜기몰엔 다 있다!</title>
+    <link rel="icon" href="./images/otoki_favi.png" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Plugin : The Final Countdown -->
+    <script src="./plugin/jquery.countdown.min.js"></script>
+    <!-- Swiper.js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive-mobile.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header Include -->
+      <div class="header-include"></div>
+      <!-- Main -->
+      <main>
+        <!-- Section : Otoki Signin -->
+        <section class="otoki-signin-section">
+          <div class="inner">
+            <form class="otoki-signin">
+              <h2 class="signin-heading">
+                <img src="./images/common/logo.svg" alt="" />
+                <span>엔 다 있다!</span>
+              </h2>
+              <div class="input-group">
+                <div class="input-field">
+                  <input type="text" placeholder="아이디(영문 및 숫자조합)" />
+                </div>
+                <div class="input-field">
+                  <input
+                    class="input-pw"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <i class="pw-toggle bi bi-eye-fill"></i>
+                </div>
+              </div>
+              <div class="signin-help">
+                <a href="#">아이디찾기</a>
+                <a href="#">비밀번호찾기</a>
+              </div>
+              <button class="signin-btn">로그인</button>
+              <a href="./html/signup.html" class="signup-link">회원가입</a>
+              <div class="other-signin">
+                <b>SNS 계정으로 로그인</b>
+                <div class="signin-sns">
+                  <button>
+                    <img src="./images/section/signin/icon_kakao.png" alt="" />
+                  </button>
+                  <button>
+                    <img src="./images/section/signin/icon_naver.png" alt="" />
+                  </button>
+                  <button>
+                    <img src="./images/section/signin/icon_apple.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <p class="staff-signin">
+                <em>!</em> 임직원 간편로그인은 <a href="#">여기</a>를
+                확인해주세요.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Include -->
+      <div class="footer-include"></div>
+      <!-- Floating Menu Include -->
+      <div class="floating-menu-include"></div>
+      <!-- Mobile Bottom Navigation Include -->
+      <div class="mo-bottom-nav-include"></div>
+    </div>
+  </body>
+</html>

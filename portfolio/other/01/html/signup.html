@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <base href="/portfolio/other/01/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오뚜기몰 | 오뚜기몰엔 다 있다!</title>
+    <link rel="icon" href="./images/otoki_favi.png" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Plugin : The Final Countdown -->
+    <script src="./plugin/jquery.countdown.min.js"></script>
+    <!-- Swiper.js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive-mobile.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header Include -->
+      <div class="header-include"></div>
+      <!-- Main -->
+      <main>
+        <!-- Section : Otoki Signup -->
+        <section class="otoki-signup-section">
+          <div class="inner">
+            <form class="otoki-signup">
+              <h2 class="signup-heading">
+                오뚜기몰과<br /><span>즐거운 만남</span>을 시작해볼까요?
+              </h2>
+              <b class="input-title required">필수 정보</b>
+              <div class="input-group required">
+                <div class="input-field">
+                  <b>이름</b>
+                  <input type="text" placeholder="홍길동" />
+                </div>
+                <div class="input-field">
+                  <b>휴대폰번호</b>
+                  <input type="tel" placeholder="010-1234-1234" />
+                </div>
+                <div class="input-field">
+                  <b>아이디</b>
+                  <input type="text" placeholder="6~16자/영문,숫자 조합" />
+                </div>
+                <div class="input-field">
+                  <b>비밀번호</b>
+                  <input
+                    type="password"
+                    placeholder="8~16자/영문,숫자,특수문자 조합"
+                  />
+                </div>
+                <div class="input-field">
+                  <b>비밀번호 재입력</b>
+                  <input
+                    type="password"
+                    placeholder="비밀번호를 한번 더 입력해 주세요."
+                  />
+                </div>
+                <div class="input-field">
+                  <b>이메일</b>
+                  <input type="email" placeholder="이메일을 입력해 주세요" />
+                </div>
+              </div>
+              <b class="input-title optional">선택 정보</b>
+              <div class="input-group optional">
+                <div class="input-field">
+                  <b>성별</b>
+                  <select required>
+                    <option value="" disabled selected>성별</option>
+                    <option value="">선택안함</option>
+                    <option value="">남</option>
+                    <option value="">여</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <b>생년월일</b>
+                  <div class="input-birth">
+                    <select class="year" required>
+                      <option value="" disabled selected>년</option>
+                    </select>
+                    <select class="month" required>
+                      <option value="" disabled selected>월</option>
+                    </select>
+                    <select class="date" required>
+                      <option value="" disabled selected>일</option>
+                    </select>
+                  </div>
+                  <p>
+                    생년월일 등록시 생일 쿠폰 발급 및 맞춤 상품을 추천해
+                    드릴게요
+                  </p>
+                </div>
+              </div>
+              <div class="terms">
+                <div class="terms-all-chk-wrap">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="terms-all-chk"
+                      name="terms-chk"
+                    />
+                    <em>약관 전체 동의</em>
+                  </label>
+                </div>
+                <div class="terms-chk-wrap">
+                  <div class="terms-chk">
+                    <label>
+                      <input type="checkbox" name="terms-chk" />
+                      <em>(필수) 이용약관 동의</em>
+                    </label>
+                    <button class="terms-open">보기</button>
+                  </div>
+                  <div class="terms-chk">
+                    <label>
+                      <input type="checkbox" name="terms-chk" />
+                      <em>(필수) 개인정보 수집 및 이용 동의</em>
+                    </label>
+                    <button class="terms-open">보기</button>
+                  </div>
+                  <div class="terms-chk marketing-consent">
+                    <label>
+                      <input type="checkbox" name="terms-chk" />
+                      <em>(선택) 마케팅 수신동의</em>
+                    </label>
+                    <p>다양한 혜택을 가장 먼저 전달 드릴게요.​</p>
+                    <div class="terms-sub-chk">
+                      <label>
+                        <input type="checkbox" name="terms-chk" />
+                        <em>이메일</em>
+                      </label>
+                      <label>
+                        <input type="checkbox" name="terms-chk" />
+                        <em>SMS</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="signup-btn">회원가입</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Include -->
+      <div class="footer-include"></div>
+      <!-- Floating Menu Include -->
+      <div class="floating-menu-include"></div>
+      <!-- Mobile Bottom Navigation Include -->
+      <div class="mo-bottom-nav-include"></div>
+    </div>
+  </body>
+</html>

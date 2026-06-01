@@ -1,0 +1,124 @@
+/* Responsive : Mobile */
+@media (max-width: 767px) {
+  /* Common CSS */
+  .inner {
+    padding: 0 var(--space-md);
+  }
+  /* Header */
+  .page-header .inner {
+    padding: 0 var(--space-md);
+  }
+  .page-header__logo-wrapper {
+    width: 120px;
+  }
+  .page-header__nav {
+    display: none;
+  }
+  /* Section : Intro */
+  .intro {
+    padding: var(--space-section-sm) 0 0 0;
+  }
+  .intro__text {
+    text-align: center;
+  }
+  .intro__subtitle {
+    font-size: var(--font-lg);
+  }
+  .intro__title {
+    font-size: var(--font-3xl);
+  }
+  /* Intro Rolling Banner */
+  .rolling-banner__track {
+    width: max-content;
+  }
+  .rolling-banner__list {
+    justify-content: flex-start;
+    gap: var(--space-sm);
+  }
+  /* Section : About */
+  .about {
+    padding: var(--space-section-md) 0;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__text-group {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  .about__details {
+    text-align: center;
+  }
+  /* Section : Skills */
+  .skills {
+    padding: var(--space-section-sm) 0;
+  }
+  .skills__subtitle {
+    font-size: var(--font-md);
+  }
+  .skills__group-list {
+    flex-direction: column;
+  }
+  /* Section : Portfolio */
+  .portfolio {
+    padding: var(--space-section-sm) 0;
+  }
+  .portfolio__subtitle {
+    font-size: var(--font-md);
+  }
+  /* Portfolio - Main */
+  .portfolio__main-item {
+    flex-direction: column;
+  }
+  .portfolio__main-links {
+    justify-content: center;
+  }
+  /* Portfolio - Widget */
+  .portfolio__widget-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Portfolio - Other */
+  .portfolio__other-subtitle {
+    word-break: keep-all;
+  }
+  .portfolio__other-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive : Tablet */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* Common CSS */
+  .inner {
+    padding: 0 var(--space-lg);
+  }
+  /* Header */
+  .page-header .inner {
+    padding: 0 var(--space-lg);
+  }
+  /* Section : Intro */
+  .intro {
+    padding: 0;
+  }
+  /* Section : About */
+  .about__content {
+    align-items: center;
+  }
+  .about__text-group {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .about__intro-wrapper {
+    max-width: 500px;
+  }
+  .about__details-wrapper {
+    width: 100%;
+    margin-top: var(--space-md);
+  }
+  .about__details {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

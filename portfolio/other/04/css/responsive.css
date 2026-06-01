@@ -1,0 +1,146 @@
+@media (max-width: 768px) {
+  /* Common CSS */
+  .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hot-content-section h2,
+  .benefits-section h2,
+  .faq-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  /* Header */
+  header .inner {
+    padding: 25px 20px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  /* Section : Hero */
+  .hero-section {
+    background-size: cover;
+    height: 90vh;
+  }
+  .hero-section .inner {
+    padding-top: 150px;
+  }
+  .heading {
+    max-width: 70%;
+  }
+  .heading h1 {
+    font-size: 32px;
+  }
+  .heading p {
+    font-size: 18px;
+    word-break: keep-all;
+    margin: 20px 0 40px 0;
+  }
+  .email-signup p {
+    word-break: keep-all;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .email-input {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="email"] {
+    padding: 15px 0;
+    padding-left: 20px;
+    width: 100%;
+  }
+  .email-signup-btn {
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 7px 20px;
+  }
+  /* Section : Banner */
+  .banner-section {
+    padding-top: 80px;
+  }
+  .banner-container {
+    position: relative;
+  }
+  .banner-container img {
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    z-index: 10;
+  }
+  .banner-container div {
+    padding: 40px 0 20px 20px;
+  }
+  .more-info {
+    position: static;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  /* Section : Hot Content */
+  .category select {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .category select.sub-category {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .content-slide img {
+    width: 100px;
+  }
+  /* Section : Benefits */
+  .benefits-section {
+    margin-top: 40px;
+  }
+  .benefits {
+    flex-direction: column;
+  }
+  .benefits div {
+    padding: 30px 15px;
+  }
+  .benefits div h3 {
+    font-size: 18px;
+  }
+  .benefits div p {
+    font-size: 14px;
+    max-width: 70%;
+  }
+  /* Section : FAQ */
+  .faq-section {
+    margin-top: 40px;
+  }
+  .question,
+  .answer {
+    padding: 15px;
+  }
+  .question {
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  .question h3 {
+    font-weight: 500;
+  }
+  .question i {
+    font-size: 20px;
+  }
+  .answer {
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  /* Footer */
+  .inquiry-call {
+    font-size: 16px;
+    word-break: keep-all;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+  .footer-links li a {
+    font-size: 14px;
+  }
+}

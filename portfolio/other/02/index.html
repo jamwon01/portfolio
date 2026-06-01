@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVER VIBE</title>
+    <link rel="icon" href="./images/favicon.jfif" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- Slick.js -->
+    <link rel="stylesheet" href="./script/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./script/slick/slick.css" />
+    <script src="./script/slick/slick.js" defer></script>
+    <!-- Custom js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- ##### Header(Mobile) ##### -->
+      <header>
+        <div class="header-logo">
+          <img src="./images/header/logo.svg" alt="" />
+        </div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <!-- ##### Left Side Bar ##### -->
+      <aside class="left-side-bar">
+        <!-- Close Menu Btn(Mobile) -->
+        <div class="close-menu-btn">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="side-bar-logo">
+          <a href="#">
+            <img src="./images/sidebar/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="side-bar-login">
+          <a class="login-link" href="#">로그인</a>
+          <p>로그인하고 할인 멤버십 확인하기</p>
+          <a class="membership-link" href="#">멤버십 구독</a>
+        </div>
+        <div class="side-bar-search">
+          <input type="text" placeholder="VIBE 검색" />
+        </div>
+        <div class="side-bar-nav">
+          <a class="active" href="#">투데이</a>
+          <a href="#">차트</a>
+          <a href="#">최신앨범</a>
+          <a href="#">DJ 스테이션</a>
+          <a href="#">VIBE MAG</a>
+          <a href="#">이달의 노래</a>
+        </div>
+        <div class="side-bar-service">
+          <a href="#">서비스 소개</a>
+          <a href="#">내돈내듣</a>
+          <a href="#">VIBE 오디오</a>
+          <a href="#">이용권 선물</a>
+        </div>
+        <div class="side-bar-install">
+          <a class="desktop-install" href="#">데스크톱앱 설치</a>
+        </div>
+      </aside>
+      <!-- ##### Current Play Bar ##### -->
+      <div class="current-play-bar">
+        <div class="track-info">
+          <img
+            class="album-cover"
+            src="./images/current_play_bar/album_cover_sample.jpg"
+            alt=""
+          />
+          <div class="title-and-artist">
+            <b class="title">1999</b>
+            <span class="artist">Hitsujibungaku</span>
+          </div>
+        </div>
+        <div class="controls">
+          <i class="fa fa-random shuffle-btn" aria-hidden="true"></i>
+          <i class="fa fa-step-backward prev-music-btn" aria-hidden="true"></i>
+          <i class="fa fa-play play-btn" aria-hidden="true"></i>
+          <i class="fa fa-step-forward next-music-btn" aria-hidden="true"></i>
+          <i class="fa fa-retweet loop-btn" aria-hidden="true"></i>
+        </div>
+        <div class="volume-and-time">
+          <div class="music-play-time">
+            <span class="current-time"
+              ><em class="current-min">00</em>:<em class="current-sec"
+                >00</em
+              ></span
+            >
+            <i>/</i>
+            <span class="total-time"
+              ><em class="total-min">03</em>:<em class="total-sec">46</em></span
+            >
+          </div>
+          <div class="volume-bar">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="volume-slider"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ########## Main ########## -->
+      <main>
+        <div class="top-banner">
+          <a href="#"
+            ><img src="./images/top_banner/top_banner_img.png" alt=""
+          /></a>
+        </div>
+        <section class="today-headline">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="./images/headline/headline_thumb.png" alt=""
+              /></a>
+            </div>
+            <div class="content">
+              <img src="./images/headline/headline_icon.png" alt="" />
+              <h2 class="headline-title">싫어서 만든 노래</h2>
+              <p class="headline-info">
+                세상에 싫은 것들이 너무 많을 때, 밴드 설(SURL)은 더욱 힘껏
+                싫어하는 대신에 노래를 만들었다. 더 깊이 들여다보고, 더 많이
+                고민하고 매만지며, 더 많은 악기와 소리를 얹어서.
+              </p>
+              <span class="headline-sub">VIBE MAGㆍ2024.10.29</span>
+            </div>
+          </div>
+        </section>
+        <section class="magazine">
+          <div class="inner">
+            <div class="heading">
+              <h2>매거진</h2>
+              <a class="more-btn" href="#">더보기</a>
+            </div>
+            <div class="magazine-list">
+              <ul class="section-slide magazine-slide">
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img01.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #193:<span>박재범</span>
+                  </p>
+                  <span class="upload-date">2024.10.22</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img02.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #193:<span>로제, 찰리 엑스씨엑스</span>
+                  </p>
+                  <span class="upload-date">2024.10.22</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img03.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #192:<span>QWER</span>
+                  </p>
+                  <span class="upload-date">2024.10.14</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img04.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #192:<span>이적, 소피</span>
+                  </p>
+                  <span class="upload-date">2024.10.07</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img05.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    밴드 드래곤<span>포니의 탄생</span>
+                  </p>
+                  <span class="upload-date">2024.09.27</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img06.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">NA<span>HWASA</span></p>
+                  <span class="upload-date">2024.09.25</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img07.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #191:<span>The Weekend</span>
+                  </p>
+                  <span class="upload-date">2024.09.24</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img08.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #191:<span>백현, 린킨파크</span>
+                  </p>
+                  <span class="upload-date">2024.09.23</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img09.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #190:<span>Oasis</span>
+                  </p>
+                  <span class="upload-date">2024.09.11</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img10.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    Day6,<span>우릴 위한 처방전</span>
+                  </p>
+                  <span class="upload-date">2024.09.06</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img11.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    온유가<span>흘러가는 곳은?</span>
+                  </p>
+                  <span class="upload-date">2024.09.04</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img12.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#190:<span>르세라핌, 사브리나 카펜터</span>
+                  </p>
+                  <span class="upload-date">2024.09.02</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img13.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    윤석철트리오의<span>여름은 아직!</span>
+                  </p>
+                  <span class="upload-date">2024.08.29</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img14.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #189:<span>HONNE</span>
+                  </p>
+                  <span class="upload-date">2024.08.20</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img15.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#189:<span>재현, 피니어스</span>
+                  </p>
+                  <span class="upload-date">2024.08.19</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img16.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    프로미스나인<span>여름을 약속해</span>
+                  </p>
+                  <span class="upload-date">2024.08.13</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img17.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #188:<span>혁오</span>
+                  </p>
+                  <span class="upload-date">2024.08.06</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img18.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#188:<span>캘빈 해리스, 엘리 굴딩</span>
+                  </p>
+                  <span class="upload-date">2024.08.05</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img19.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #187:<span>키스 오브 라이프</span>
+                  </p>
+                  <span class="upload-date">2024.07.23</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="rec-playlist">
+          <div class="inner">
+            <div class="heading">
+              <h2>VIBE 추천 플레이리스트</h2>
+              <a class="more-btn" href="#">더보기</a>
+            </div>
+            <div class="rec-list">
+              <ul class="section-slide rec-slide">
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img01.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 댄스</p>
+                  <span class="sub-title">VIBE 국내 댄스</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img02.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 발라드</p>
+                  <span class="sub-title">VIBE 발라드</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img03.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 K-POP</p>
+                  <span class="sub-title">VIBE K-POp</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img04.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 아이돌</p>
+                  <span class="sub-title">VIBE K-POP</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img05.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 알앤비</p>
+                  <span class="sub-title">VIBE 국내 알앤비/소울</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img06.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 힙합</p>
+                  <span class="sub-title">VIBE 국내 힙합</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img07.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 인디</p>
+                  <span class="sub-title">VIBE 국내 인디</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img08.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 포크/어쿠스틱</p>
+                  <span class="sub-title">VIBE 국내 포크/어쿠스틱</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img09.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 락/메탈</p>
+                  <span class="sub-title">VIBE 국내 락/메탈</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img10.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 OST</p>
+                  <span class="sub-title">VIBE OST</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img11.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 트로트</p>
+                  <span class="sub-title">VIBE 트로트</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img12.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 재즈</p>
+                  <span class="sub-title">VIBE 재즈</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="today-playlist">
+          <div class="inner">
+            <div class="heading">
+              <h2>생각이 많을 때💬</h2>
+              <a class="more-btn" href="#">더보기</a>
+            </div>
+            <div class="today-list">
+              <ul class="section-slide today-slide">
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img1.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">무기력한 하루 근데 우울을 곁들인</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img2.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">행복해지는 주문을 걸어</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">저기요 조용히 좀 해주세요</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img4.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">혼자만의 시간을 위해</p>
+                  <span class="sub-title">VIBE 국내 포크/어쿠스틱</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img5.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">이 세상에 나 혼자 남은 아포칼립스</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img6.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">지금 잠수 중</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img7.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">격렬하게 아무것도 안 하고 싶다</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img8.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">방안에서</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img9.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">혼술 타임</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="store-link">
+          <div class="inner">
+            <img src="./images/store_link/mixtape_img.png" alt="" />
+            <h2>
+              아티스트 고르고 매일 믹스테잎 받기<span
+                >지금 VIBE 앱에서 취향 길들이기를 해보세요!</span
+              >
+            </h2>
+            <div>
+              <a href="#" class="app-link app-store"></a>
+              <a href="#" class="app-link play-store"></a>
+            </div>
+          </div>
+        </section>
+        <section class="intro">
+          <h2>
+            지금 바로 로그인하고<span>한땀 한땀 만든 플레이리스트 듣기!</span>
+          </h2>
+          <p>
+            K-Pop부터 클래식까지 모든 장르를 아우르는 건 기본.<br />수천 개의
+            플레이리스트가 트렌드에 맞게 업데이트.
+          </p>
+          <div class="intro-bg"></div>
+        </section>
+      </main>
+      <!-- ########## Footer ########## -->
+      <footer>
+        <div class="footer-top">
+          <div class="inner">
+            <div class="notice">
+              <a class="notice-link" href="#">공지사항</a>
+              <a class="notice-title" href="#">VIBE 첫 구독자 혜택 변경 안내</a>
+            </div>
+            <div class="sns-link">
+              <a href="#">
+                <i class="xi-facebook-official" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="xi-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="xi-naver-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="inner">
+            <div class="company-info company-info1">
+              <span class="info-head"
+                >네이버(주) 대표이사<span>최수연</span></span
+              >
+              <span class="info-head"
+                >사업자등록번호<span>220-81-62517</span></span
+              >
+              <span class="info-head"
+                >통신판매업신고번호<span>제2006-경기성남-0692호</span></span
+              >
+            </div>
+            <div class="company-info company-info2">
+              <span class="info-head"
+                >주소<span
+                  >경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span
+                ></span
+              >
+              <span class="info-head">대표전화<span>1588-3820</span></span>
+              <span class="info-head"
+                >이메일<a href="mailto:hyo4754@gmail.com"
+                  >ccnaver@naver.com</a
+                ></span
+              >
+              <span class="info-head"
+                >호스팅 서비스 제공<span>NAVER Cloud</span></span
+              >
+            </div>
+            <div class="footer-links">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">네이버 이용약관</a>
+              <a href="#">VIBE 이용약관</a>
+              <a href="#">VIBE 커뮤니티 운영정책</a>
+              <a href="#">고객센터</a>
+              <a href="#">결제/환불 안내</a>
+              <a href="#">VIBE 스마트봇</a>
+              <a href="#">톡톡상담</a>
+              <a href="#">사업자정보 확인</a>
+              <a href="#">© NAVER Corp.</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

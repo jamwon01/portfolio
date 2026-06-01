@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <base href="/portfolio/other/01/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오뚜기몰 | 오뚜기몰엔 다 있다!</title>
+    <link rel="icon" href="./images/otoki_favi.png" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Plugin : The Final Countdown -->
+    <script src="./plugin/jquery.countdown.min.js"></script>
+    <!-- Swiper.js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive-mobile.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header Include -->
+      <div class="header-include"></div>
+      <!-- Main -->
+      <main>
+        <!-- Section : Otoki Daily -->
+        <section class="otoki-daily-section">
+          <div class="inner">
+            <h2>otoki daily</h2>
+            <img
+              class="daily-main-img"
+              src="./images/section/otoki_daily/daily_main_img01.jpg"
+              alt=""
+            />
+            <img
+              class="mo-daily-main-img"
+              src="./images/mobile/otoki_daily/mo_daily_main_img.jpg"
+              alt=""
+            />
+            <div class="daily-content">
+              <div class="daily-tab-bar">
+                <span>전체 <b>16</b>개</span>
+                <div class="sort-menu">
+                  <ul class="sort-list">
+                    <li><a href="#" class="active">인기순</a></li>
+                    <li><a href="#">신제품순</a></li>
+                    <li><a href="#">할인순</a></li>
+                    <li><a href="#">낮은가격순</a></li>
+                    <li><a href="#">높은가격순</a></li>
+                  </ul>
+                  <div class="sort-select sort-storage">
+                    <select>
+                      <option value="">배송전체</option>
+                      <option value="">실온</option>
+                      <option value="">냉장&냉동</option>
+                    </select>
+                  </div>
+                  <div class="sort-select sort-limit">
+                    <select>
+                      <option value="">40개</option>
+                      <option value="">60개</option>
+                      <option value="">80개</option>
+                      <option value="">100개</option>
+                    </select>
+                  </div>
+                  <button class="layout-toggle"></button>
+                </div>
+              </div>
+              <div class="daily-product">
+                <div class="products-wrapper">
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img01.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">한입쏙쏙 미트볼</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">9,900원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(33)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage cold">냉장&냉동</span>
+                        <span class="badge storage new">NEW</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img02.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">초간편 잡채전 2묶음</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">13,500원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(19)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage cold">냉장&냉동</span>
+                        <span class="badge storage new">NEW</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img03.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">입맛 살리는 비빔당면</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">7,000원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">4.8</span>
+                        <span class="review-count">(59)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage best">BEST</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img04.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">옛날 메밀국수 2봉</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">6,800원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">4.6</span>
+                        <span class="review-count">(29)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage cold">냉장&냉동</span>
+                        <span class="badge storage new">NEW</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img05.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">단백질 가득 칰햄 세트</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">8,800원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(85)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage cold">냉장&냉동</span>
+                        <span class="badge storage BEST">BEST</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img06.webp"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">간단하게 뚝딱 참치미역죽</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">6,700원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(19)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage new">NEW</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img07.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">열튀김우동(선택)</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">1,080원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(121)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage new">BEST</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img08.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">열라면 120GX5</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">3,580원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(320)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage new">BEST</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img09.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">핫케이크믹스 1KG</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">6,480원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">4.9</span>
+                        <span class="review-count">(33)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage new">NEW</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img10.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">오뚜기 카레 팝콘 1봉지</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">1,300원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(33)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge storage new">NEW</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img11.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">
+                        스리라차와 마요네스가 만난 매코매요 210G
+                      </h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">3,380원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(2)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img12.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">유부우동 컵라면 소컵</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">940원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(33)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img13.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">마라장 2종 골라담기(선택)</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">4,880원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">4.9</span>
+                        <span class="review-count">(8)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img14.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">담백한 공갈빵 600G</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">9,900원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(33)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage cold">냉장&냉동</span>
+                        <span class="badge storage best">BEST</span>
+                        <span class="badge coupon">쿠폰</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img15.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">
+                        [20%할인] 콕콕콕 컵라면 5종 골라담기
+                      </h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">1,180원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(382)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="pr-thumb">
+                      <img
+                        src="./images/section/otoki_daily/daily_pr_img16.jpg"
+                        alt=""
+                      />
+                      <i class="bi bi-cart add-cart"></i>
+                    </div>
+                    <div class="pr-desc">
+                      <h3 class="pr-title">옛날 쌀떡국</h3>
+                      <div class="pr-price-box">
+                        <span class="final-price">2,580원</span>
+                      </div>
+                      <div class="pr-rating-box">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating">5.0</span>
+                        <span class="review-count">(1)</span>
+                      </div>
+                      <div class="pr-badge-box">
+                        <span class="badge storage ambient">실온</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Include -->
+      <div class="footer-include"></div>
+      <!-- Floating Menu Include -->
+      <div class="floating-menu-include"></div>
+      <!-- Mobile Bottom Navigation Include -->
+      <div class="mo-bottom-nav-include"></div>
+    </div>
+  </body>
+</html>

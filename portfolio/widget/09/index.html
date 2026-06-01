@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 정보 수정 위젯</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jQuery -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- script.js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="profile-container">
+      <form class="profile-form">
+        <div class="heading">
+          <h2>회원 정보 수정</h2>
+        </div>
+        <div class="profile-img-box">
+          <img src="./images/profile_exam.jpg" class="profile-img" />
+          <div class="upload-box">
+            <label for="upload-img"><i class="fa fa-camera"></i></label>
+            <input type="file" id="upload-img" />
+          </div>
+        </div>
+        <div class="profile-info-box">
+          <div class="info-field">
+            <b>아이디</b>
+            <span>won12345</span>
+          </div>
+          <div class="info-field">
+            <b>이름</b>
+            <span>김아무개</span>
+          </div>
+          <div class="info-field">
+            <b>닉네임</b>
+            <input type="text" id="userNickname" value="호박이" />
+          </div>
+          <div class="info-field">
+            <b>전화번호</b>
+            <input type="text" id="userHp" value="010-1234-1234" />
+          </div>
+        </div>
+        <div class="save-btn-box">
+          <button class="save-btn">저장하기</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
