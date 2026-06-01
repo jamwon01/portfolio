@@ -11,7 +11,6 @@ const page = {
 
     if (savedTheme) {
       html.setAttribute("data-theme", savedTheme);
-      toggleBtn.textContent = savedTheme === "dark" ? "Light" : "Dark";
     }
 
     toggleBtn.addEventListener("click", () => {
@@ -20,7 +19,6 @@ const page = {
 
       html.setAttribute("data-theme", next);
       localStorage.setItem("theme", next);
-      toggleBtn.textContent = next === "dark" ? "Light" : "Dark";
     });
   },
   portfolio() {

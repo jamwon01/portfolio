@@ -221,6 +221,23 @@ html {
   font-weight: 600;
 }
 
+.theme-toggle svg {
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.theme-toggle .icon-moon {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  opacity: 1;
+}
+
 /* Header */
 .page-header {
   position: fixed;
