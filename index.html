@@ -14,7 +14,7 @@
     <title>Portfolio | 안재원</title>
   </head>
   <body>
-    <button class="theme-toggle">Dark</button>
+    <button class="theme-toggle" aria-label="다크모드 토글">Dark</button>
     <div class="page-wrapper">
       <header class="page-header">
         <div class="inner">
@@ -416,20 +416,51 @@
             <div class="portfolio__content">
               <div class="portfolio__main-portfolio">
                 <h3 class="portfolio__main-title">메인 프로젝트</h3>
-                <div class="portfolio__main-tabs">
-                  <button type="button" class="portfolio__main-tab">
+                <div
+                  class="portfolio__main-tabs"
+                  role="tablist"
+                  aria-label="메인 프로젝트"
+                >
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-book"
+                    id="tab-book"
+                  >
                     도서 검색 페이지
                   </button>
-                  <button type="button" class="portfolio__main-tab">
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-board"
+                    id="tab-board"
+                  >
                     게시판 페이지
                   </button>
-                  <button type="button" class="portfolio__main-tab">
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-todo"
+                    id="tab-todo"
+                  >
                     투두리스트 페이지
                   </button>
                 </div>
                 <div class="portfolio__main-content">
                   <ul class="portfolio__main-list">
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-book"
+                      aria-labelledby="tab-book"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
@@ -490,7 +521,13 @@
                         </div>
                       </div>
                     </li>
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-board"
+                      aria-labelledby="tab-board"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
@@ -547,7 +584,13 @@
                         </div>
                       </div>
                     </li>
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-todo"
+                      aria-labelledby="tab-todo"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
