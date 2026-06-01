@@ -11,7 +11,6 @@ const page = {
 
     if (savedTheme) {
       html.setAttribute("data-theme", savedTheme);
-      toggleBtn.textContent = savedTheme === "dark" ? "Light" : "Dark";
     }
 
     toggleBtn.addEventListener("click", () => {
@@ -20,7 +19,6 @@ const page = {
 
       html.setAttribute("data-theme", next);
       localStorage.setItem("theme", next);
-      toggleBtn.textContent = next === "dark" ? "Light" : "Dark";
     });
   },
   portfolio() {
@@ -28,20 +26,27 @@ const page = {
     const tabs = document.querySelectorAll(".portfolio__main-tab");
     const tabItems = document.querySelectorAll(".portfolio__main-item");
 
-    tabItems.forEach((tabItem, index) => {
-      tabItem.classList.toggle("is-active", index === 0);
-    });
-    tabs.forEach((tab, index) => {
-      tab.classList.toggle("is-active", index === 0);
-    });
+    const activateTab = (index) => {
+      // Update visual states
+      tabs.forEach((t) => t.classList.remove("is-active"));
+      tabs[index].classList.add("is-active");
 
+      tabItems.forEach((tabItem) => tabItem.classList.remove("is-active"));
+      tabItems[index].classList.add("is-active");
+
+      // Update ARIA states
+      tabs.forEach((t) => t.setAttribute("aria-selected", "false"));
+      tabs[index].setAttribute("aria-selected", "true");
+    };
+
+    // Initialize first tab
+    activateTab(0);
+
+    // Click handler (also works with Enter/Space keys on keyboard)
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => {
-        tabs.forEach((t) => t.classList.remove("is-active"));
-        tab.classList.add("is-active");
-
-        tabItems.forEach((tabItem) => tabItem.classList.remove("is-active"));
-        tabItems[index].classList.add("is-active");
+        activateTab(index);
+        tab.focus();
       });
     });
 

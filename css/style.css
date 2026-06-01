@@ -173,6 +173,17 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
 }
+
+/* Focus Styles for Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  border-radius: 2px;
+}
 button {
   border: none;
   background: none;
@@ -208,6 +219,23 @@ html {
   color: var(--color-white);
   border-radius: 50%;
   font-weight: 600;
+}
+
+.theme-toggle svg {
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.theme-toggle .icon-moon {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  opacity: 1;
 }
 
 /* Header */

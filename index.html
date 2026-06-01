@@ -8,13 +8,52 @@
       name="description"
       content="웹 퍼블리셔 안재원의 개인 포트폴리오 홈페이지입니다. 현재까지의 작업물들을 페이지에 모아두었습니다."
     />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jaewonportfolio.com/" />
+    <meta property="og:title" content="Portfolio | 안재원" />
+    <meta
+      property="og:description"
+      content="웹 퍼블리셔 안재원의 개인 포트폴리오 홈페이지입니다. 현재까지의 작업물들을 페이지에 모아두었습니다."
+    />
+    <meta property="og:image" content="images/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://jaewonportfolio.com/" />
+    <meta name="twitter:title" content="Portfolio | 안재원" />
+    <meta
+      name="twitter:description"
+      content="웹 퍼블리셔 안재원의 개인 포트폴리오 홈페이지입니다. 현재까지의 작업물들을 페이지에 모아두었습니다."
+    />
+    <meta name="twitter:image" content="images/og-image.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jaewonportfolio.com/" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="script/main.js" defer></script>
     <title>Portfolio | 안재원</title>
   </head>
   <body>
-    <button class="theme-toggle">Dark</button>
+    <button class="theme-toggle" aria-label="다크모드 토글">
+      <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
     <div class="page-wrapper">
       <header class="page-header">
         <div class="inner">
@@ -416,25 +455,57 @@
             <div class="portfolio__content">
               <div class="portfolio__main-portfolio">
                 <h3 class="portfolio__main-title">메인 프로젝트</h3>
-                <div class="portfolio__main-tabs">
-                  <button type="button" class="portfolio__main-tab">
+                <div
+                  class="portfolio__main-tabs"
+                  role="tablist"
+                  aria-label="메인 프로젝트"
+                >
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-book"
+                    id="tab-book"
+                  >
                     도서 검색 페이지
                   </button>
-                  <button type="button" class="portfolio__main-tab">
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-board"
+                    id="tab-board"
+                  >
                     게시판 페이지
                   </button>
-                  <button type="button" class="portfolio__main-tab">
+                  <button
+                    type="button"
+                    class="portfolio__main-tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-todo"
+                    id="tab-todo"
+                  >
                     투두리스트 페이지
                   </button>
                 </div>
                 <div class="portfolio__main-content">
                   <ul class="portfolio__main-list">
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-book"
+                      aria-labelledby="tab-book"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
                           src="images/portfolio/main_pf_thumb_01.png"
                           alt="도서 검색 페이지 대표 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__main-desc">
@@ -490,12 +561,19 @@
                         </div>
                       </div>
                     </li>
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-board"
+                      aria-labelledby="tab-board"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
                           src="images/portfolio/main_pf_thumb_02.png"
                           alt="게시판 페이지 대표 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__main-desc">
@@ -547,12 +625,19 @@
                         </div>
                       </div>
                     </li>
-                    <li class="portfolio__main-item">
+                    <li
+                      class="portfolio__main-item"
+                      role="tabpanel"
+                      id="panel-todo"
+                      aria-labelledby="tab-todo"
+                      tabindex="0"
+                    >
                       <div class="portfolio__main-image-wrapper">
                         <img
                           class="portfolio__main-image"
                           src="images/portfolio/main_pf_thumb_03.png"
                           alt="투두리스트 페이지 대표 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__main-desc">
@@ -614,6 +699,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_01.png"
                           alt="하단 바 탭 슬라이드 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -654,6 +740,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_02.png"
                           alt="flip 형식 회원가입 및 로그인 폼 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -695,6 +782,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_03.png"
                           alt="라이트박스 갤러리 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -736,6 +824,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_04.png"
                           alt="SNS 아이콘 Hover 이펙트 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -773,6 +862,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_05.png"
                           alt="비밀번호 토글 회원가입 폼 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -814,6 +904,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_06.png"
                           alt="폰트 사이즈 변경 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -854,6 +945,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_07.png"
                           alt="상단 스크롤 게이지 바 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -895,6 +987,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_08.png"
                           alt="네비게이션 Hover 애니메이션 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -933,6 +1026,7 @@
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_09.png"
                           alt="회원 정보 수정 이미지 업로드 위젯 썸네일 이미지"
+                          loading="lazy"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
@@ -993,6 +1087,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_01.png"
                         alt="오뚜기몰 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1012,6 +1107,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_02.png"
                         alt="Naver Vibe 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1033,6 +1129,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_03.png"
                         alt="CJ OLVIVE YOUNG 랜딩페이지 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1052,6 +1149,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_04.png"
                         alt="Netflix 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1071,6 +1169,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_05.png"
                         alt="Firefox 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1088,6 +1187,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_06.png"
                         alt="알툴즈 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1107,6 +1207,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_07.png"
                         alt="빙그레 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1124,6 +1225,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_08.png"
                         alt="국민건강보험공단 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1141,6 +1243,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_09.png"
                         alt="모나미 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
@@ -1158,6 +1261,7 @@
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_10.png"
                         alt="Yes24 썸네일 이미지"
+                        loading="lazy"
                       />
                     </a>
                     <div class="portfolio__other-overlay">
